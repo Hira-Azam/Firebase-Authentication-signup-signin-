@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome page</title>
+</head> 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background-color: rosybrown;
+        }
+
+        .home-box {
+            width: 100%;
+            max-width: 500px;
+            padding: 40px 30px;
+            text-align: center;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 {
+            color: #4c3bdd;
+            margin-bottom: 20px;
+        }
+
+        #userEmail {
+            margin-bottom: 25px;
+            color: #555;
+            word-break: break-word;
+        }
+
+        #logoutBtn {
+            padding: 10px 25px;
+            background-color: #4c3bdd;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        #logoutBtn:hover {
+            background-color: #3e30c5;
+        }
+
+        @media (max-width: 480px) {
+            .home-box {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 26px;
+            }
+        }
+    </style>
+<body>
+    <div class="home-box">
+        <h1>Welcome!</h1>
+        <p id="userEmail"></p>
+        <button id="logoutBtn">Sign Out</button>
+    </div>
+    <script  src="app.js" type="module"></script>
+</body>
+</html>
