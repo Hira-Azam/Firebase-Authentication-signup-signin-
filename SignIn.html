@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn Page</title>
+    <style>
+         * {
+            box-sizing: border-box;
+        }
+.container {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;   
+    gap:40px;
+}
+        body {
+            margin: 0;
+            background-color: rosybrown;
+            font-family: Arial, sans-serif;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            color: #4937d8;
+            margin-top: 100px;
+            margin-bottom: 60px;
+        }
+
+        input {
+            width: 40%;
+            height: 42px;
+            margin-bottom: 53px;
+            padding: 10px 15px;
+            border: 1px solid #ddd;
+            border-radius: 7px;
+            font-size: 14px;
+            outline: none;
+        }
+
+        #signinBtn {
+            width: 230px;
+            height: 35px;
+            background-color: #4c3bdd;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        #signinBtn:hover {
+            background-color: #3e30c5;
+        }
+
+        p {
+            color: white;
+            margin-top: -25px;
+            margin-left: 250px;
+        }
+
+        #signupBtn {
+            background-color: #4c3bdd;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 16px;
+            margin-left: 1px;
+            font-weight: bold;
+            cursor: pointer;
+            gap:10px;
+        }
+        .signupBtn{
+           display: flex;
+    justify-content: center;
+    align-items: center;
+        }
+        #signupBtn:hover {
+            background-color: #3e30c5;
+        }
+        @media (max-width: 768px) {
+
+            body {
+                padding: 25px 20px;
+            }
+
+            h1 {
+                font-size: 30px;
+                margin-top: 35px;
+                margin-bottom: 50px;
+            }
+
+            input {
+                width: 80%;
+                margin-bottom: 40px;
+            }
+
+            #signinBtn {
+                width: 220px;
+            }
+
+            p {
+                font-size: 13px;
+            }
+        }
+        @media (max-width: 480px) {
+
+            body {
+                padding: 20px 15px;
+            }
+
+            h1 {
+                font-size: 26px;
+                margin-top: 35px;
+                margin-bottom: 45px;
+            }
+
+            input {
+                width: 100%;
+                height: 44px;
+                margin-bottom: 30px;
+                font-size: 14px;
+            }
+
+            #signinBtn {
+                width: 100%;
+                max-width: 230px;
+                height: 40px;
+            }
+
+            p {
+                width: 100%;
+                margin-top: 15px;
+
+                flex-wrap: wrap;
+                text-align: center;
+
+                font-size: 13px;
+            }
+
+            #signupBtn {
+                padding: 7px 14px;
+            }
+        }
+        @media (max-width: 350px) {
+
+            h1 {
+                font-size: 24px;
+                margin-bottom: 35px;
+            }
+
+            input {
+                height: 42px;
+                margin-bottom: 25px;
+            }
+
+            #signinBtn {
+                max-width: 100%;
+            }
+
+            p {
+                flex-direction: column;
+                gap: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Sign In</h1>
+    <input type="email"  id="lemail"placeholder="Enter your email">
+    <input type="password" id="lpass" placeholder="Enter your password">
+    <div class="container">
+    <button  id="signinBtn">Sign In</button>
+    <div class="signupBtn">
+    <p>Create account If not exist <button id="goSignup">Sign up</button></p>
+    </div>
+    </div>
+    <script src="app.js" type="module"></script>
+</body>
+</html>
